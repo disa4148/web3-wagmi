@@ -57,7 +57,7 @@ export default function Home() {
                      <w3m-network-button />
                      <w3m-button />
 					 {address ? <p>Your adress: <span className={styles.item}>{address}</span></p> : ''}
-			   		 Balance: {balanceData?.formatted} {balanceData?.symbol}
+			   		 {balanceData ? <p>Balance: {balanceData?.formatted} {balanceData?.symbol} </p>: ''}
                   </div>
                </div>
                <div className={styles.footer}>
